@@ -1,6 +1,10 @@
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'header header header'
+    'aside main main'
+    'aside sub-1 sub-2'
+    'footer footer footer';
   gap: 2rem 4rem;
   font-family: monospace;
   font-size: 1.3rem;
@@ -14,23 +18,20 @@
   align-items: center;
 }
 
-.stretch {
-  grid-column: 1 / span 3;
-}
-
 .header {
+  grid-area: header;
   background-color: #ffd195;
   color: #41354d;
 }
 
 .aside {
+  grid-area: aside;
   height: 100%;
-  grid-row: 2 / span 2;
   background: #de7e44;
 }
 
 .main {
-  grid-column: 2 / -1;
+  grid-area: main;
   background-color: #5d9b84;
 }
 
@@ -38,6 +39,15 @@
   background-color: #537479;
 }
 
+.sub-1 {
+  grid-area: sub-1;
+}
+
+.sub-2 {
+  grid-area: sub-2;
+}
+
 .footer {
+  grid-area: footer;
   background-color: #41354d;
 }
