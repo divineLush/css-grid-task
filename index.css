@@ -24,12 +24,18 @@
 }
 
 .aside {
+  height: 100%;
+  grid-row: 2 / span 2;
   background: #de7e44;
 }
 
 .main {
   grid-column: 2 / -1;
   background-color: #5d9b84;
+}
+
+.article {
+  background-color: #537479;
 }
 
 .footer {
