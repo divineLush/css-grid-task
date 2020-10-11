@@ -1,0 +1,19 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 4rem;
+  font-family: monospace;
+}
+
+.wrapper > * {
+  height: 10rem;
+}
+
+.stretch {
+  grid-column: 1 / span 3;
+}
+
+.main {
+  grid-column: 2 / -1;
+  background-color: green;
+}
