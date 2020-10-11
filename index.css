@@ -3,6 +3,8 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem 4rem;
   font-family: monospace;
+  font-size: 1.3rem;
+  color: #f4f4f4;
 }
 
 .wrapper > * {
@@ -16,7 +18,20 @@
   grid-column: 1 / span 3;
 }
 
+.header {
+  background-color: #ffd195;
+  color: #41354d;
+}
+
+.aside {
+  background: #de7e44;
+}
+
 .main {
   grid-column: 2 / -1;
-  background-color: green;
+  background-color: #5d9b84;
+}
+
+.footer {
+  background-color: #41354d;
 }
